@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <link rel="stylesheet" href="travel.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Travel Destinations</h1>
+        <input type="text" id="searchBar" placeholder="Search for destinations...">
+        <button id="search-btn">Search</button>
+
+        </div>
+    <div id="destinations"></div>
+    
+    
+
+    <div class="form-container">
+        <h2>Add New Destination</h2>
+        <form id="add-destination-form">
+            <input type="text" id="destination-name" placeholder="Destination" required>
+            <input type="text" id="destination-image" placeholder="Image File Name (e.g., paris.jpg)" required>
+            <input type="text" id="destination-activities" placeholder="Activities (comma separated)" required>
+            <input type="text" id="destination-cost" placeholder="Cost Estimate" required>
+            <input type="text" id="destination-duration" placeholder="Duration (e.g., 5 days)" required>
+            <input type="text" id="destination-flight-time" placeholder="Flight Time (e.g., 10:00 AM)" required>
+            <input type="text" id="destination-airport" placeholder="Airport" required>
+            <input type="text" id="destination-location" placeholder="Location (Latitude, Longitude)" required>
+            
+            <button type="submit">Add Destination</button>
+        </form>
+    </div>
+    
+    <script src="travel.js"></script> 
+</body>
+</html>

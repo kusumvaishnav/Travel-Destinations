@@ -1,0 +1,171 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d2e4ef; 
+    margin: 30px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px; 
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+h1{
+    color: #090505;
+}
+
+input[type="text"] {
+    width: 50%;
+    padding: 12px; 
+    margin-bottom: 20px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    font-size: 16px; 
+    background-color: #453a3a; 
+    color: white; 
+}
+#searchBar{
+    background: rgb(33, 20, 20);
+}
+
+.search-button {
+    padding: 12px 20px; 
+    background-color: #faa3a7; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.search-button:hover {
+    background-color: #f62f39; 
+    transform: translateY(-2px); 
+}
+
+.destination {
+    border: 1px solid #333; 
+    border-radius: 8px; 
+    margin: 10px;
+    padding: 15px;
+    background-color: #fbf6f6; 
+    display: inline-block;
+    width: 220px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.2s; 
+}
+
+.destination:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.destination img {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.destination h3 {
+    margin: 10px 0;
+    font-size: 18px; 
+    color: #0d0909; 
+}
+
+.destination p {
+    margin: 5px 0;
+    font-size: 14px; 
+    color: #fcf7f7; 
+}
+
+button {
+    padding: 10px 15px; 
+    background-color: #99b5ca; 
+    color: rgb(12, 9, 9);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+button:hover {
+    background-color: #509ee3; 
+    transform: translateY(-2px); 
+}
+
+
+
+.details-container {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #667477; 
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(87, 71, 71, 0.3);
+    color: #fbf8f8; 
+}
+
+.hidden {
+    display: none;
+}
+
+#itinerary {
+    margin-top: 20px;
+}
+
+#itinerary .destination-card {
+    margin: 10px;
+    padding: 15px;
+    background-color: #1c1c1c; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#itinerary button {
+    background-color: #77c0e7; 
+}
+
+#itinerary button:hover {
+    background-color: #4cafe8; 
+}
+
+
+.form-container {
+    background-color: #fbf6f6; 
+    border-radius: 8px; 
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(61, 35, 35, 0.5); 
+    width: 80%; 
+    max-width: 600px; 
+    margin: 20px auto; 
+}
+
+.form-group {
+    margin-bottom: 15px; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .destination {
+        width: 100%; 
+    }
+
+    input[type="text"] {
+        width: 100%; 
+        padding: 10px;
+    }
+
+    button {
+        width: 100%; 
+    }
+}
